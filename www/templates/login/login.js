@@ -18,8 +18,8 @@ angular.module('starter').controller('loginController', function ($scope, $state
       //saving user info
       $localStorage.email = authData.email;
        Utils.hide();
-      $state.go('app.profile');
-      $log.log("Starter page","Profile");
+      $state.go('app.home');
+      $log.log("Starter page","Home");
 
       }, function(err) {
         Utils.hide();

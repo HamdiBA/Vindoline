@@ -38,9 +38,17 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
     .state('app', {
     url: '/app',
     abstract: true,
-    templateUrl: 'templates/home.html',
+    templateUrl: 'templates/tabs.html',
     controller: 'AppCtrl'
-  })
+    })
+    .state('app.home', {
+           url: '/home',
+           views: {
+               'home-tab': {
+                   templateUrl: 'templates/home.html',
+               }
+           }
+       })
   .state('app.profile', {
       url: '/profile',
       views: {
@@ -48,7 +56,23 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
           templateUrl: 'templates/profile/profile.html',
         }
       }
+  })
+    .state('app.notification', {
+        url: '/notification',
+        views: {
+            'notification-tab': {
+                templateUrl: 'templates/notification/notification.html',
+            }
+        }
     })
+  .state('app.messagerie', {
+      url: '/messagerie',
+      views: {
+          'messagerie-tab': {
+              templateUrl: 'templates/messagerie/messagerie.html',
+          }
+      }
+  })
   .state('login', {
             url: '/login',
             templateUrl: 'templates/login/login.html',
@@ -63,7 +87,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       url: '/forgot',
       templateUrl: 'templates/forgot/forgot.html',
       controller:'forgotController'
-    })
+  })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
