@@ -33,6 +33,8 @@ angular.module('starter').factory('Auth', function(FURL, $log, $firebaseAuth, $f
     createProfile: function(uid, user) {
       var profile = {
 				id: uid,
+        lastname: user.lastname,
+        name: user.name,
         email: user.email,
 				registered_in: Date()
       };

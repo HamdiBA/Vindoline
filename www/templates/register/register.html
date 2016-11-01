@@ -8,10 +8,11 @@
     </div>
     <form name="registerForm" novalidate ng-submit="registerForm.$valid && register(user)"
           ng-class="{ 'has-error' : registerForm.txtemail.$invalid && registerForm.$submitted }">
+
       <div class="list list-inset">
           <label class="item item-input">
               <i class="icon ion-person"></i>
-              <input name="txtnom" type="text" ng-model="user.lastName" placeholder="Nom"
+              <input name="txtnom" type="text" ng-model="user.lastname" placeholder="Nom"
                      ng-minlength="1"
                      ng-maxlength="30"
                      required>
@@ -23,6 +24,7 @@
                      ng-maxlength="30"
                      required>
           </label>
+
         <label class="item item-input">
           <i class="icon ion-email"></i>
           <input name="txtemail" type="email" ng-model="user.email" placeholder="Email"
