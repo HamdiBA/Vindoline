@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
            url: '/home',
            views: {
                'home-tab': {
-                   templateUrl: 'templates/home.html',
+                   templateUrl: 'templates/home/home.html'
                }
            }
        })
