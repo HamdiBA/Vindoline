@@ -41,6 +41,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
     templateUrl: 'templates/tabs.html',
     controller: 'AppCtrl'
     })
+
     .state('app.home', {
            url: '/home',
            views: {
@@ -49,14 +50,13 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
                }
            }
        })
-  .state('app.profile', {
+
+    .state('profile', {
       url: '/profile',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/profile/profile.html',
-        }
-      }
-  })
+      controller: 'profileCtrl',
+      templateUrl: 'templates/profile/profile.html'
+    })
+
     .state('app.notification', {
         url: '/notification',
         views: {
@@ -88,6 +88,10 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       templateUrl: 'templates/forgot/forgot.html',
       controller:'forgotController'
   })
+    .state('annonce', {
+      url: '/annonces',
+      templateUrl: 'templates/annonces/annonces.html',
+    })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
@@ -103,5 +107,12 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       });
     }
   }
-})
-;
+});
+
+
+
+
+
+
+
+
