@@ -89,10 +89,21 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       controller:'forgotController'
   })
     .state('annonce', {
-      url: '/annonces',
-      templateUrl: 'templates/annonces/annonces.html',
+            url: '/annonces',
+            templateUrl: 'templates/annonces/annonces.html',
+    })
+    .state('settings', {
+            url: '/settings',
+            controller:'SettingCtrl',
+            templateUrl: 'templates/settings/settings.html'
+
+  })
+    .state('contacts', {
+      url: '/contacts',
+      templateUrl: 'templates/contacts/contacts.html',
     })
   ;
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 })
@@ -109,6 +120,11 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
   }
 });
 
+app.controller('AnnoncesCtrl', function($scope, $ionicSideMenuDelegate) {
+  $scope.openMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  }
+});
 
 
 
