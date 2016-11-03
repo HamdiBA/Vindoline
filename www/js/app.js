@@ -120,11 +120,13 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
   }
 });
 
+/*
 app.controller('AnnoncesCtrl', function($scope, $ionicSideMenuDelegate) {
   $scope.openMenu = function () {
     $ionicSideMenuDelegate.toggleLeft();
   }
 });
+*/
 
 
 

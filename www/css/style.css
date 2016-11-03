@@ -3,6 +3,16 @@ i.icon {
   padding-right: 5px;
 }
 
+.menu .bar.bar-header.expanded {
+  background-image: url('../img/photo_profil.jpg');
+  background-size: 120%;
+  background-position: 0%;
+  transition: all .5s ease-in-out;
+}
+
+
+
+
 .bar.bar-profile {
   background-color: #444;
   height: 170px;
