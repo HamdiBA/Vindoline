@@ -5,6 +5,7 @@ angular.module('starter').factory('Auth', function(FURL, $log, $firebaseAuth, $f
   firebase.initializeApp(FURL);
 	//var auth = $firebaseAuth(ref);
   var ref = firebase.database().ref();
+
   //var auth = $firebaseObject(ref);
   var auth = $firebaseAuth();
 

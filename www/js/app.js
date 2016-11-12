@@ -46,7 +46,8 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
            url: '/home',
            views: {
                'home-tab': {
-                   templateUrl: 'templates/home/home.html'
+                   templateUrl: 'templates/home/home.html',
+                   controller : 'homeController'
                }
            }
        })
@@ -70,6 +71,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       views: {
           'messagerie-tab': {
               templateUrl: 'templates/messagerie/messagerie.html',
+              controller:"messagerieController"
           }
       }
   })
