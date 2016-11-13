@@ -88,21 +88,26 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       templateUrl: 'templates/forgot/forgot.html',
       controller:'forgotController'
   })
-    .state('annonce', {
-            url: '/annonces',
-            templateUrl: 'templates/annonces/annonces.html',
+    .state('annonces', {
+      url: '/annonces',
+      templateUrl:'templates/annonces/annonces.html',
+      controller:'annoncesCtrl'
+    })
+  .state('contacts', {
+    url: '/contacts',
+    templateUrl:'templates/contacts/contacts.html',
+    controller:'contactsCtrl'
+  })
+    .state('candidacy', {
+      url: '/candidacy',
+      templateUrl:'templates/candidacy/candidacy.html',
+      controller:'candidacyCtrl'
     })
     .state('settings', {
-            url: '/settings',
-            controller:'SettingCtrl',
-            templateUrl: 'templates/settings/settings.html'
-
-  })
-    .state('contacts', {
-      url: '/contacts',
-      templateUrl: 'templates/contacts/contacts.html',
-    })
-  ;
+      url: '/settings',
+      templateUrl:'templates/settings/settings.html',
+      controller:'settingsCtrl'
+    });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
@@ -119,16 +124,6 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
     }
   }
 });
-
-/*
-app.controller('AnnoncesCtrl', function($scope, $ionicSideMenuDelegate) {
-  $scope.openMenu = function () {
-    $ionicSideMenuDelegate.toggleLeft();
-  }
-});
-*/
-
-
 
 
 
