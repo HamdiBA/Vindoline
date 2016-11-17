@@ -13,7 +13,7 @@ angular.module('starter').factory('Auth', function(FURL, $log, $firebaseAuth, $f
 		user: {},
 
     login: function(user) {
-      return auth.$signInWithEmailAndPassword(
+        return auth.$signInWithEmailAndPassword(
         user.email, user.password
       );
     },
@@ -31,7 +31,7 @@ angular.module('starter').factory('Auth', function(FURL, $log, $firebaseAuth, $f
         });
     },
 
-    createProfile: function(uid, user) {
+    createProfile: function (uid, user) {
       var profile = {
 				id: uid,
         lastname: user.lastname,

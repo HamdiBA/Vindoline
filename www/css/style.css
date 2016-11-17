@@ -154,3 +154,7 @@ p.forgot-text {
   font-size: medium;
   font-weight: bold;
 }
+.big-icon, .big-icon:hover, .big-icon:before {
+    font-size:60px !important;
+    color:#ef473a;
+}

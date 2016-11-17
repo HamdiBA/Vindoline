@@ -18,10 +18,10 @@ angular.module('starter').controller('messagerieController', function ($scope, $
     };
     $scope.nouveauMessage = function (message) {
         console.log(message);
-       // var ref = firebase.database().ref();
-       // var obj = $firebaseObject(ref);
-       // console.log(obj);
+        var ref = firebase.database().ref();
+        var obj = $firebaseObject(ref);
+        console.log(obj);
         $scope.modal.hide();
-       // Conversation.creerConversation(Auth.user,message.texte,message.user);
+       Conversation.creerConversation(Auth.user,message.texte,message.user);
     };
 });
