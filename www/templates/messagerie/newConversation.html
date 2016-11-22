@@ -1,0 +1,22 @@
+﻿<ion-modal-view >
+    <ion-header-bar class="bar bar-dark">
+        <h1 class="title">Nouvelle Conversation</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+    </ion-header-bar>
+   
+    <ion-content>
+        <form ng-submit="nouveauMessage(message)" class="list">
+            <label class="item item-input">
+                <input ng-model="message.user" type="text" placeholder="Contact">
+            </label>
+            <label class="item item-input">
+                <textarea placeholder="Entrez votre message" ng-model="message.texte" rows="6" ></textarea>
+            </label>
+            <label class="item item-input">
+                <button class="button button-block button-assertive">
+                    Envoyer
+                </button>
+            </label>
+        </form>
+    </ion-content>
+</ion-modal-view>

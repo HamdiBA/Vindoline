@@ -8,13 +8,17 @@
             <input type="search" placeholder="Recherche">
         </label>
     </ion-nav-title>
-    <ion-content padding="true">
-        <h1 style="text-align: center;">Messagerie</h1>
+    <ion-content >
+        <ion-list ng-repeat="m in messagerie">
+            <ion-item class="item item-avatar" ng-click="voirConversation(m)">
+                    <img src="{{m.imageProfil}}">
+                    <h2><b>{{m.user}}</b></h2>
+                    <p>{{m.messages[0].message}}</p>
+                
+            </ion-item>
+        </ion-list>
         <ion-footer-bar >
-            
             <button ng-click="newConversation()" class="pull-right button button-icon icon ion-plus-circled big-icon" ></button>
-
-
         </ion-footer-bar>
     </ion-content>
 </ion-view>

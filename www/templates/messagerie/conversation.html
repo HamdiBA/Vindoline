@@ -1,0 +1,33 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-dark">
+        <h1 class="title">{{conversation.user}}</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+    </ion-header-bar>
+
+    <ion-content>
+        <ion-list  ng-repeat="c in conversation.messages">
+            <ion-item align="right" class="item item-avatar-right"  ng-if="user.nomComplet == c.auteur">
+                <img align="right" src="{{user.imageProfil}}">
+                {{c.message}}
+                <div class="petitTexte">{{c.date}} </div>
+              
+            </ion-item>
+            <ion-item align="left" class="item item-avatar" ng-if="user.nomComplet != c.auteur">
+                <img src="{{conversation.imageProfil}}">
+                {{c.message}}
+                <div class="petitTexte">{{c.date}}</div> 
+            </ion-item>
+        </ion-list>
+
+        <form ng-submit="nouveauMessage(message)" class="list">
+            <label class="item item-input">
+                <textarea placeholder="Entrez votre message" ng-model="message.texte" rows="6"></textarea>
+            </label>
+            <label class="item item-input">
+                <button class="button button-block button-assertive">
+                    Envoyer
+                </button>
+            </label>
+        </form>
+    </ion-content>
+</ion-modal-view>
