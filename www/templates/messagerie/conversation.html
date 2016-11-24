@@ -1,33 +1,38 @@
 ﻿<ion-modal-view>
     <ion-header-bar class="bar bar-dark">
+        <button class="button button-small button-dark" ng-click="goBack()">
+            <i class="icon ion-android-arrow-back"></i> 
+        </button>
         <h1 class="title">{{conversation.user}}</h1>
-        <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+       
     </ion-header-bar>
+    
 
     <ion-content>
         <ion-list  ng-repeat="c in conversation.messages">
-            <ion-item align="right" class="item item-avatar-right"  ng-if="user.nomComplet == c.auteur">
-                <img align="right" src="{{user.imageProfil}}">
-                {{c.message}}
-                <div class="petitTexte">{{c.date}} </div>
-              
+            <ion-item class="item-text-wrap item-borderless message right"  ng-if="user.nomComplet == c.auteur">
+                <div class="pic-profil-right"><img src="{{user.imageProfil}}"></div>
+                <div align="right" class="bubble-chat right">{{c.message}}</div>
+                <div class="date right">{{c.date}} {{c.heure}} </div>
             </ion-item>
-            <ion-item align="left" class="item item-avatar" ng-if="user.nomComplet != c.auteur">
-                <img src="{{conversation.imageProfil}}">
-                {{c.message}}
-                <div class="petitTexte">{{c.date}}</div> 
+            <ion-item align="left" class="item-text-wrap item-borderless message left" ng-if="user.nomComplet != c.auteur">
+                <div class="pic-profil-left"><img  src="{{conversation.imageProfil}}"></div>
+                <div class="bubble-chat left">{{c.message}}</div>
+                <div class="date left">{{c.date}} {{c.heure}}</div> 
             </ion-item>
         </ion-list>
 
-        <form ng-submit="nouveauMessage(message)" class="list">
-            <label class="item item-input">
-                <textarea placeholder="Entrez votre message" ng-model="message.texte" rows="6"></textarea>
-            </label>
-            <label class="item item-input">
-                <button class="button button-block button-assertive">
-                    Envoyer
-                </button>
-            </label>
-        </form>
+        
     </ion-content>
+    <form ng-submit="repondreMessage(input.message, conversation)" >
+        <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
+            <label class="item-input-wrapper">
+                <textarea class="textarea-message" ng-model="input.message"  value="" required minlength="1" maxlength="1500" msd-elastic></textarea>
+            </label>
+            <div class="footer-btn-wrap">
+                <button class="button button-icon icon ion-android-send footer-btn" type="submit"
+                        ng-disabled="!input.message || input.message === ''"></button>
+            </div>
+        </ion-footer-bar>
+    </form>
 </ion-modal-view>

@@ -158,7 +158,94 @@ p.forgot-text {
     font-size:60px !important;
     color:#ef473a;
 }
-.petitTexte{
-    font-size:11px;
 
+
+.pic-profil-right img {
+    float:right;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    padding:10px 10px;
+}
+.pic-profil-left img {
+    float:left;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    padding:10px 10px;
+}
+.bubble-chat{
+    border-radius:5px;
+    padding:10px 20px;
+  margin: 10px;
+}
+.bubble-chat.right{
+    background-color: #ef473a ;
+    margin-right:60px;
+    color:white;
+}
+.bubble-chat:before {
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  width: 9px;
+  position: absolute;
+  bottom: 55px;
+ 
+}
+.bubble-chat.right:before {
+  background-color: #ef473a;
+  right: 75px;
+  -webkit-transform: rotate(125deg) ;
+}
+.bubble-chat.left:before {
+  background-color: #e6e5eb;
+  left: 75px;
+  -webkit-transform: rotate(55deg) ;
+}
+.bubble-chat.left{
+    background-color :#e6e5eb;
+    margin-left:60px;
+}
+.date{
+    font-size:11px;
+    
+}
+.date.right{
+    text-align:right;
+    margin-right:60px;
+}
+.date.left{
+    text-align:left;
+    margin-left:60px;
+}
+
+.message a{
+    text-decoration:none;
+
+}
+
+.footer-btn {
+  position: absolute !important; 
+  bottom: 0;
+}
+.footer-btn-wrap {
+  position: relative; 
+  height: 100%; 
+  width: 50px; 
+  top: 7px;
+}
+button.ion-android-send {
+  padding-top: 2px;
+}
+.bar-footer textarea {
+  resize: none;
+  height: 40px;
+}
+.bar-footer {
+  overflow: visible !important;
+}
+.item-input-wrapper .textarea-message ,.item-input,.bar.item-input-inset{
+  width: 100% !important;
+    background-color: #f4f4f4 !important;
 }
