@@ -1,14 +1,17 @@
-﻿
-<ion-view >
-    <ion-tabs class="tabs-icon-top tabs-dark">
-        <ion-tab title="Accueil" icon="ion-home" href="#/app/home">
-            <ion-nav-view name="home-tab"></ion-nav-view>
-        </ion-tab>
-        <ion-tab title="Notifications" icon="ion-ios-bell" href="#/app/notification">
-            <ion-nav-view name="notification-tab"></ion-nav-view>
-        </ion-tab>
-        <ion-tab title="Messagerie" icon="ion-chatboxes" href="#/app/messagerie">
-            <ion-nav-view name="messagerie-tab"></ion-nav-view>
-        </ion-tab>
-    </ion-tabs>
-</ion-view>
+﻿<ion-tabs class="tabs-icon-top tabs-color-active-calm tabs-light">
+
+  <ion-tab title="Accueil" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/app/home" badge="5" badge-style="badge-assertive">
+    <ion-nav-view name="home-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Notifications" icon-off="ion-ios-bell-outline" icon-on="ion-ios-bell" href="#/app/notification">
+    <ion-nav-view name="notification-tab"></ion-nav-view>
+  </ion-tab>
+
+
+  <ion-tab title="Messagerie" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/app/messagerie" badge="2" badge-style="badge-assertive">
+    <ion-nav-view name="messagerie-tab"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
