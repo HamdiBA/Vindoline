@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -13718,38 +13718,7 @@ a.tag {
   padding-bottom: 5px;
 }
 
-/* Sidemenu */
-.menu-open .menu-content.menu-animated {
-  transform: translate3d(-225px, 0px, 0px) scale(0.8) !important;
-}
 
-ion-side-menus {
-  background: #222629 !important;
-}
-
-.menu.menu-right {
-  background-color: transparent;
-  padding: 80px 16px 80px 32px;
-  color: #fff;
-}
-
-.menu.menu-right .item {
-  background-color: transparent;
-  border: none;
-}
-
-.menu.menu-right .item h2 {
-  color: #fff;
-}
-
-.menu.menu-right .item img {
-  border-radius: 0;
-}
-
-.menu.menu-right h3 {
-  font-weight: 200;
-  color: #fff;
-}
 
 /* FEEDS */
 .card {
