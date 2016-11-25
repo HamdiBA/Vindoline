@@ -109,8 +109,17 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       url: '/settings',
       templateUrl:'templates/settings/settings.html',
       controller:'settingsCtrl'
-    });
-
+    })
+    .state('creerpagepro', {
+        url: '/creerpagepro',
+      templateUrl:'templates/professionnel/creerPagePro.html',
+      controller:'creerPageProCtrl'
+    })
+  .state('pagepro', {
+      url: '/pagepro',
+      templateUrl:'templates/professionnel/pagePro.html',
+      controller:'creerPageProCtrl'
+  });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 })

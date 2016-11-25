@@ -1,0 +1,42 @@
+﻿<ion-view title="Créer une page professionnel">
+    
+    <ion-content>
+        <form ng-submit="creerPagePro()">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Nom de l'entreprise</span>
+                    <input required ng-model="pagepro.nom" type="text" placeholder="Nom de l'entreprise">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Lieu</span>
+                    <input required ng-model="pagepro.lieu" type="text" placeholder="Lieu">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span ng-model="pagepro.secteur" class="input-label">Secteur</span>
+                    <input required type="text" placeholder="Secteur">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span required class="input-label" >Description</span>
+                    <textarea ng-model="pagepro.description" placeholder="Description"></textarea>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span ng-model="pagepro.site" class="input-label">Site web</span>
+                    <input type="text" placeholder="Site web">
+                </label>
+                <div class="fileUpload button button-assertive">
+                    <span>Upload</span>
+                    <input type="file" class="upload" />
+                </div>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Taille de l'entreprise</span>
+                    <input type="text" ng-model="pagepro.tailleentreprise" placeholder="Taille de l'entreprise">
+                </label>
+               
+                <div class="medium_button">
+                    <input type="submit" class="button button-block button-assertive " value="Créer">
+                </div>
+            </div>
+        </form>
+        
+    </ion-content>
+</ion-view>

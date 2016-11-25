@@ -245,7 +245,23 @@ button.ion-android-send {
 .bar-footer {
   overflow: visible !important;
 }
-.item-input-wrapper .textarea-message ,.item-input,.bar.item-input-inset{
+.textarea{
   width: 100% !important;
-    background-color: #f4f4f4 !important;
+  background-color: #f4f4f4 !important;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
