@@ -1,4 +1,4 @@
-angular.module('App.directives', [])
+angular.module('starter.directives', [])
   .directive('focusMe', function ($timeout) {
     return {
       link: function(scope, element, attrs) {
@@ -25,17 +25,6 @@ angular.module('App.directives', [])
     }
   })
 
-  .directive('elastic', function() {
-    return {
-      restric: 'A',
-      link: function(scope, el, attr) {
-        scope.$on('elastic:resize', function(event, element, oldHeight, newHeight) {
-          newHeight = Math.max(44, newHeight);
-          el[0].style.height = newHeight + 'px';
-        });
-      }
-    }
-  })
 
   .directive('randomBackground', function() {
     return {
