@@ -26,8 +26,8 @@
     </ion-content>
     <form ng-submit="repondreMessage(input.message, conversation)" >
         <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
-            <label class="item-input-wrapper">
-                <textarea class="textarea-message" ng-model="input.message"  value="" required minlength="1" maxlength="1500" msd-elastic></textarea>
+            <label class="item-input-wrapper textarea-message">
+                <textarea class="textarea" ng-model="input.message"  required minlength="1" maxlength="1500" msd-elastic></textarea>
             </label>
             <div class="footer-btn-wrap">
                 <button class="button button-icon icon ion-android-send footer-btn" type="submit"

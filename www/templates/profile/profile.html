@@ -3,6 +3,38 @@
     <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
   </ion-nav-buttons>
   <ion-content padding="true">
-    <h1 style="text-align: center;">Profile Page</h1>
-  </ion-content>
+      <ion-list>
+          <ion-item class="item-divider">
+              Profil
+          </ion-item>
+          <ion-item class="item-input item-stacked-label">
+              <span class="input-label">Prénom</span>
+              <input type="text">
+          </ion-item>
+          <ion-item class="item-input item-stacked-label">
+              <span class="input-label">Nom</span>
+              <input type="text">
+          </ion-item>
+          <ion-item class="item-input item-stacked-label">
+              <span class="input-label">Formation</span>
+              <input type="text">
+          </ion-item>
+          <ion-item class="item item-input item-select">
+              <div class="input-label">
+                  Pays
+              </div>
+              <select>
+                  <option selected>France</option>
+                  <option>Canada</option>
+                  <option>Suisse</option>
+                  <option>Belgique</option>
+                  <option>Autre</option>
+              </select>
+          </ion-item>
+          <ion-item class="item-stacked-label">
+              <span class="input-label">Code postal</span>
+              <input type="text">
+          </ion-item>
+          </ion-list>
+</ion-content>
 </ion-view>
