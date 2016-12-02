@@ -1,4 +1,4 @@
-<ion-view view-title="INSCRIPTION">
+<ion-view view-title="Inscription">
   <ion-nav-bar class="bar-dark">
     <ion-nav-back-button></ion-nav-back-button>
   </ion-nav-bar>
@@ -27,7 +27,7 @@
 
         <label class="item item-input">
           <i class="icon ion-email"></i>
-          <input name="txtemail" type="email" ng-model="user.email" placeholder="Email"
+          <input name="txtemail" type="email" ng-model="user.email" placeholder="Adresse E-mail"
                  ng-minlength="6"
                  ng-maxlength="30"
                  required>
@@ -39,7 +39,7 @@
         </div>-->
         <label class="item item-input" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}">
           <i class="icon ion-locked"></i>
-          <input name="txtpassword" type="password" ng-model="user.password" placeholder="Password"
+          <input name="txtpassword" type="password" ng-model="user.password" placeholder="Mot de passe"
                  ng-minlength="6"
                  ng-maxlength="25"
                  required>

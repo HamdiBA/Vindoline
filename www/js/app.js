@@ -134,6 +134,12 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova','firebase','ngMessa
       });
     }
   }
+})
+
+.config(function($ionicConfigProvider) {
+  $ionicConfigProvider.tabs
+    .position('bottom')
+    .style('standard');
 });
 
 
