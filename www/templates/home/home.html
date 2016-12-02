@@ -19,7 +19,7 @@
   <ion-content class="has-subheader bg-muted">
     <ion-refresher on-refresh="refresh()" pulling-icon="ion-chevron-up"></ion-refresher>
 
-    <div class="list card" ui-sref="tab.post({id: $index})">
+    <div class="list card" ui-sref="app.post({id: $index})">
       <div class="wrapper-sm b-b b-light">
         <b>Florian Pizzala</b> aime ceci
       </div>
@@ -42,23 +42,8 @@
         </p>
       </div>
 
-      <div class="img-full" ng-if="$index%2 == 0">
-        <img
-          src="https://image-store.slidesharecdn.com/a9f9b830-f2d3-4688-a3af-1efb7474a5ef-original.jpeg">
-      </div>
-
-      <!-- Shared post -->
-      <div class="wrapper-sm" ng-if="$index%2 == 1">
-        <div class="b b-light">
-          <div class="img-full">
-            <img src="img/photo.jpg">
-          </div>
-
-          <div class="wrapper-xs">
-            <div class="font-bold">Download this app</div>
-            <div class="text-sm text-muted">Handy tool to convert CVs</div>
-          </div>
-        </div>
+      <div class="img-full">
+        <img src="img\img-post.jpg">
       </div>
 
       <div class="wrapper-sm">
@@ -81,7 +66,6 @@
         </a>
       </div>
 
-      <!-- Latest comment -->
       <div class="wrapper-sm l-h clear">
         <img src="img/coline.jpg" alt="" class="thumb-xs rounded pull-left m-r-sm">
         <div class="clear">
@@ -111,24 +95,6 @@
         </p>
       </div>
 
-      <div class="img-full" ng-if="$index%2 == 0">
-        <img
-          src="https://image-store.slidesharecdn.com/a9f9b830-f2d3-4688-a3af-1efb7474a5ef-original.jpeg">
-      </div>
-
-      <!-- Shared post -->
-      <div class="wrapper-sm" ng-if="$index%2 == 1">
-        <div class="b b-light">
-          <div class="img-full">
-            <img src="img/photo.jpg">
-          </div>
-
-          <div class="wrapper-xs">
-            <div class="font-bold">Download this app</div>
-            <div class="text-sm text-muted">Handy tool to convert CVs</div>
-          </div>
-        </div>
-      </div>
 
       <div class="wrapper-sm">
         <a href="" class="subdued">26 J'aime</a>·
@@ -150,7 +116,6 @@
         </a>
       </div>
 
-      <!-- Latest comment -->
       <div class="wrapper-sm l-h clear">
         <img
           src="https://media.licdn.com/media/AAEAAQAAAAAAAAkbAAAAJDJhNDk3MTdiLWI5MjctNDM0OC04YzU3LTYyYTQ0N2NjZGIyYQ.jpg"
