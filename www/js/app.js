@@ -61,9 +61,10 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
 
       .state('profile', {
         url: '/profile',
-        //controller: 'profileCtrl',
+        controller: 'profilController',
         templateUrl: 'templates/profile/profile.html'
       })
+
 
       .state('app.notification', {
         url: '/notification',
@@ -130,7 +131,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/profile');
   })
   .directive('noScroll', function ($document) {
 
