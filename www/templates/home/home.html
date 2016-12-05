@@ -2,7 +2,7 @@
   <ion-nav-buttons side="left">
     <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
   </ion-nav-buttons>
-  <ion-nav-title class="bar bar-header bar-dark item-input-inset">
+  <ion-nav-title class="bar bar-header bar-assertive item-input-inset">
     <label class="item-input-wrapper">
       <i class="icon ion-search placeholder-icon"></i>
       <input type="search" placeholder="Chercher des personnes, un poste, etc ...">
@@ -12,14 +12,14 @@
 
   <div class="bar bar-subheader" horizontal layout center>
     <img src="img/me.jpg" alt="" class="thumb-xs rounded m-l-sm m-r-sm">
-    <div class="text-muted" flex ng-click="openPost()">Publier un article, une photo ou une idée</div>
-    <button class="button button-icon ion-ios-camera-outline text-muted" ng-click="openPost()"></button>
+    <div class="text-muted" flex ng-click="newPost()">Publier un article, une photo ou une idée</div>
+    <button class="button button-icon ion-ios-camera-outline text-muted" ng-click="newPost()"></button>
   </div>
 
   <ion-content class="has-subheader bg-muted">
     <ion-refresher on-refresh="refresh()" pulling-icon="ion-chevron-up"></ion-refresher>
 
-    <div class="list card" ui-sref="tab.post({id: $index})">
+    <div class="list card" ui-sref="app.post({id: $index})">
       <div class="wrapper-sm b-b b-light">
         <b>Florian Pizzala</b> aime ceci
       </div>
@@ -42,23 +42,8 @@
         </p>
       </div>
 
-      <div class="img-full" ng-if="$index%2 == 0">
-        <img
-          src="https://image-store.slidesharecdn.com/a9f9b830-f2d3-4688-a3af-1efb7474a5ef-original.jpeg">
-      </div>
-
-      <!-- Shared post -->
-      <div class="wrapper-sm" ng-if="$index%2 == 1">
-        <div class="b b-light">
-          <div class="img-full">
-            <img src="img/photo.jpg">
-          </div>
-
-          <div class="wrapper-xs">
-            <div class="font-bold">Download this app</div>
-            <div class="text-sm text-muted">Handy tool to convert CVs</div>
-          </div>
-        </div>
+      <div class="img-full">
+        <img src="img\img-post.jpg">
       </div>
 
       <div class="wrapper-sm">
@@ -81,7 +66,6 @@
         </a>
       </div>
 
-      <!-- Latest comment -->
       <div class="wrapper-sm l-h clear">
         <img src="img/coline.jpg" alt="" class="thumb-xs rounded pull-left m-r-sm">
         <div class="clear">
@@ -111,24 +95,6 @@
         </p>
       </div>
 
-      <div class="img-full" ng-if="$index%2 == 0">
-        <img
-          src="https://image-store.slidesharecdn.com/a9f9b830-f2d3-4688-a3af-1efb7474a5ef-original.jpeg">
-      </div>
-
-      <!-- Shared post -->
-      <div class="wrapper-sm" ng-if="$index%2 == 1">
-        <div class="b b-light">
-          <div class="img-full">
-            <img src="img/photo.jpg">
-          </div>
-
-          <div class="wrapper-xs">
-            <div class="font-bold">Download this app</div>
-            <div class="text-sm text-muted">Handy tool to convert CVs</div>
-          </div>
-        </div>
-      </div>
 
       <div class="wrapper-sm">
         <a href="" class="subdued">26 J'aime</a>·
@@ -150,7 +116,6 @@
         </a>
       </div>
 
-      <!-- Latest comment -->
       <div class="wrapper-sm l-h clear">
         <img
           src="https://media.licdn.com/media/AAEAAQAAAAAAAAkbAAAAJDJhNDk3MTdiLWI5MjctNDM0OC04YzU3LTYyYTQ0N2NjZGIyYQ.jpg"

@@ -1,0 +1,79 @@
+<ion-view title="Modification de profil">
+  <ion-header-bar class="bar-dark">
+    <button class="button button-clear" ng-click="closePost()">
+      <i class="icon ion-android-close"></i>
+    </button>
+    <div class="h1 title">Modification de profil</div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="item item-divider b-none bg-muted">
+      Coordonnées personnelles
+    </div>
+
+
+    <div class="row responsive-sm">
+      <div class="col col-50 col-offset-25">
+        <div class="list box">
+
+          <label class="item item-input">
+            <div class="input-label">
+              <strong>Prénom</strong>
+            </div>
+            <input type="text">
+          </label>
+          <label class="item item-input">
+            <div class="input-label">
+              <strong>Nom</strong>
+            </div>
+            <input type="text">
+          </label>
+          <label class="item item-input">
+            <div class="input-label">
+              <strong>Titre</strong>
+            </div>
+            <input type="text">
+          </label>
+          <label class="item item-input item-select item-divider">
+            <div class="input-label">
+              <strong>Pays</strong>
+            </div>
+            <select>
+              <option selected>France</option>
+              <option>Canada</option>
+              <option>Suisse</option>
+              <option>Belgique</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label class="item item-input">
+            <div class="input-label">
+              <strong>Ville</strong>
+            </div>
+            <input type="text">
+          </label>
+          <label class="item item-input">
+            <div class="input-label">
+              <strong>Date de naissance</strong>
+            </div>
+            <input type="text">
+          </label>
+          <label class="item item-input item-select item-divider">
+            <div class="input-label">
+              <strong>Sexe</strong>
+            </div>
+            <select>
+              <option selected>Homme</option>
+              <option>Femme</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="medium_button">
+      <input type="submit" class="button button-block button-assertive " value="Enregistrer">
+    </div>
+    
+
+  </ion-content>
+</ion-view>

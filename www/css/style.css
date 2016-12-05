@@ -191,7 +191,7 @@ p.forgot-text {
   width: 9px;
   position: absolute;
   bottom: 55px;
- 
+
 }
 .bubble-chat.right:before {
   background-color: #ef473a;
@@ -209,7 +209,7 @@ p.forgot-text {
 }
 .date{
     font-size:11px;
-    
+
 }
 .date.right{
     text-align:right;
@@ -226,13 +226,13 @@ p.forgot-text {
 }
 
 .footer-btn {
-  position: absolute !important; 
+  position: absolute !important;
   bottom: 0;
 }
 .footer-btn-wrap {
-  position: relative; 
-  height: 100%; 
-  width: 50px; 
+  position: relative;
+  height: 100%;
+  width: 50px;
   top: 7px;
 }
 button.ion-android-send {
@@ -265,3 +265,25 @@ button.ion-android-send {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+
+/* Form error  */
+
+form i.icon.error {
+  color: #ef4e3a; }
+
+form input + i.icon.error {
+  display: none;
+  margin-left: 8px; }
+
+form.ng-submitted input.ng-invalid + i.icon.error {
+  display: block; }
+
+form .has-error {
+  border-left: 5px solid #cc2511; }
+
+form .has-success {
+  border-left: 5px solid #3d8b3d; }
+
+form.ng-submitted input.ng-valid + i.icon.error {
+  display: none; }

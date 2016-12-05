@@ -1,0 +1,99 @@
+<ion-view>
+  <ion-nav-title>
+  </ion-nav-title>
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon ion-ios-more"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-footer">
+    <div class="">
+      <div class="wrapper-sm l-h clear">
+        <img src="img/jeanne.jpg" class="thumb-sm rounded pull-left m-r-sm">
+        <div class="clear">
+          <div class="font-bold">Jeanne Plancke</div>
+          <div class="text-sm text-muted">Digital Talent Recruiter chez Edgar People</div>
+          <div class="text-sm text-muted">15 min</div>
+        </div>
+      </div>
+
+      <div class="wrapper-sm">
+        <p>
+          J’ai échoué 3 fois à l’université. J’ai postulé 30 fois pour avoir un boulot mais j’ai toujours été rejeté. Quand KFC est venu en Chine pour la première fois, nous étions 24 à postuler et j’étais le seul à être rejeté. Je voulais rentrer dans la police et sur 5 postulants, j’étais le seul à ne pas être accepté. J’ai postulé 10 fois pour rentrer à l’université d’Harvard aux USA et j’ai été rejeté.
+          Jack Ma, Créateur d'Alibaba et 22e fortune mondiale selon le Magazine Forbes en 2015 avec 29,8 milliards de dollars.
+        </p>
+      </div>
+
+      <div class="img-full">
+        <img src="img\img-post.jpg">
+      </div>
+
+      <div class="wrapper-sm b-b b-light">
+        <a href="" class="subdued">3 J'aime</a>·
+        <a href="" class="subdued">2 commentaires</a>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left m-n b-none">
+        <a class="tab-item" href="">
+          <i class="icon ion-thumbsup"></i>
+          J'aime
+        </a>
+        <a class="tab-item" href="">
+          <i class="icon ion-chatbox"></i>
+          Commenter
+        </a>
+        <a class="tab-item" href="">
+          <i class="icon ion-share"></i>
+          Partager
+        </a>
+      </div>
+
+      <div class="b-b b-light"></div>
+
+      <div class="item item-divider no-bg b-none ">J'aime</div>
+      <div class="likers wrapper-sm">
+        <img class="thumb-xs rounded m-r-sm pull-left" src="img/adam.jpg" random-avatar alt="" ng-repeat="i in [0,1,2,3]">
+        <span class="thumb-xs rounded b b-light more-liker">
+          <i class="icon ion-more"></i>
+        </span>
+      </div>
+
+
+      <div class="item item-divider no-bg b-none ">Commentaires </div>
+      <div class="wrapper-sm l-h clear" ng-repeat="i in [0,1,2]">
+        <img src="img/coline.jpg" alt="" class="thumb-xs rounded pull-left m-r-sm">
+        <div class="clear b-b b-light">
+          <div class="m-b-sm">
+            <div class="font-bold">Coline Priore</div>
+            <div class="text-sm text-muted">Marketing</div>
+            <div class="text-sm text-muted">5 min</div>
+          </div>
+
+          <p class="">Cela pourrait être un bon exemple!</p>
+
+          <div class="text-muted m-b-xs">
+            <span class="m-r">
+              <i class="icon ion-thumbsup"></i>
+              J'aime
+            </span>
+            <span class="m-r">
+              <i class="icon ion-chatbox"></i>
+              Répondre
+            </span>
+            <span class="b-l m-r padder">
+              3 J'aime
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-footer-bar class="item-input-inset" keyboard-attach>
+    <label class="item-input-wrapper">
+      <input type="search" placeholder="Ajouter un commentaire...">
+    </label>
+    <button class="button button-clear">
+      POST
+    </button>
+  </ion-footer-bar>
+</ion-view>
