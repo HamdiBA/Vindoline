@@ -35,5 +35,19 @@ angular.module('starter').controller('welcomeController', function ($scope,$root
   $scope.closeRegister = function() {
     $scope.modalRegister.hide();
   };
-
+    //login
+  $scope.signIn = function (user) {
+      console.log("bah");
+      $scope.modalLogin.hide();
+      $state.go('app.home');
+  }
+  $scope.goRegister = function(){
+      $scope.modalLogin.hide();
+      $scope.modalRegister.show();
+  }
+    //register
+  $scope.register = function(user){
+      $scope.modalRegister.hide();
+      $scope.modalLogin.show();
+  }
 });

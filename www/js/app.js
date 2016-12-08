@@ -89,7 +89,6 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
           }
         }
       })
-
       .state('login', {
         url: '/login',
         templateUrl: 'templates/login/login.html',

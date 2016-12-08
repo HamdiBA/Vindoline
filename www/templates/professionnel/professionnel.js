@@ -40,6 +40,9 @@ angular.module('starter').controller('creerPageProCtrl', function ($scope, $root
         $scope.annonce = annonce;
         $scope.modal.show();
     }
+    $scope.goBack = function () {
+        $scope.modal.hide();
+    };
     function getDateNow() {
         var date = new Date();
         var jour = date.getDate();
