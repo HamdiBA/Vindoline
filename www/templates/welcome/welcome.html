@@ -1,0 +1,24 @@
+<ion-view hide-nav-bar="true" ng-class="{'bg-gradient': activeIndex != 0}" vertical layout>
+  <div flex relative>
+    <ion-slide-box fit on-slide-changed="slideHasChanged($index)" active-slide="activeIndex" ng-init="activeIndex = 0">
+      <ion-slide class="text-center flex-vertical-center">
+        <h1>VINDOLINE<ion-icon name="bookmark"></ion-icon></h1>
+        <p class="font-thin text-lg">Votre réseau social Pro</p>
+      </ion-slide>
+      <ion-slide class="text-center flex-vertical-center">
+        <h2 class="font-thin light">Créez votre profil</h2>
+      </ion-slide>
+      <ion-slide class="text-center flex-vertical-center">
+        <h2 class="font-thin light">Connectez-vous et restez en contact avec votre réseau</h2>
+      </ion-slide>
+      <ion-slide class="text-center flex-vertical-center">
+        <h2 class="font-thin light">Trouvez des emplois par l'intermédiaire de personnes que vous connaissez</h2>
+      </ion-slide>
+    </ion-slide-box>
+  </div>
+
+  <div class="padder">
+    <button class="button button-block" ng-class="{'button-light button-outline': activeIndex != 0, 'button-calm': activeIndex == 0}" ng-click="openRegister()"><b>S'inscrire</b></button>
+    <button class="button button-block button-clear button-light" ng-class="{'button-calm': activeIndex == 0}" ng-click="openLogin()">S'identifier</button>
+  </div>
+</ion-view>

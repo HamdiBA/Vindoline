@@ -27,6 +27,8 @@ angular.module('starter')
     $scope.modalPost.hide();
   };
 
+
+
   // refresh page
 
   $scope.refresh = function() {

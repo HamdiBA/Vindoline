@@ -33,6 +33,12 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
+      .state('welcome', {
+        url: '/welcome',
+        templateUrl: 'templates/welcome/welcome.html',
+        controller: 'welcomeController'
+      })
+
       .state('app', {
         url: '/app',
         abstract: true,
@@ -136,7 +142,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/welcome');
   })
   .directive('noScroll', function ($document) {
 
