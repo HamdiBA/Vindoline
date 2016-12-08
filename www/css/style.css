@@ -306,3 +306,6 @@ form.ng-submitted input.ng-valid + i.icon.error {
         opacity: 1;
         border-top:   3px;
     }
+
+
+    .textColorWhite{color:white !important;}
