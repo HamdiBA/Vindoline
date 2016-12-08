@@ -18,9 +18,8 @@ angular.module('starter').controller('profilController', function ($scope,$rootS
   $scope.modal.hide = function () {
     $scope.modal.hide();
   };
-
-  $scope.goBack = function () {
-    $scope.voirConv.hide();
+  $scope.closeEdit = function() {
+    $scope.modal.hide();
   };
 
 });

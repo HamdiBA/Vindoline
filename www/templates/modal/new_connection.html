@@ -3,17 +3,18 @@
 		<button class="button button-clear" ng-click="closeAdd()">
 			<i class="icon ion-android-close"></i>
 		</button>
-		<div class="h1 title">Find Connections</div>
+		<div class="h1 title">Trouver des relations</div>
 	</ion-header-bar>
 	<ion-content>
 		<div class="list">
-      <div class="item item-divider no-bg">People you may know</div>
+      <div class="item item-divider no-bg">Les connaissez-vous ?</div>
       <div class="item item-avatar item-icon-right" ng-repeat="i in [0,1,2,3,4,5,6,7,8]">
 				<img src="img/adam.jpg" random-avatar alt="">
 				<div class="font-bold">Adam Lambert</div>
-				<div class="text-sm text-muted">Sales Executive</div>
-				<div class="text-xs text-muted">2 mutual connections</div>
-				<i class="icon ion-ios-plus-outline calm"></i>
+        <div class="text-sm text-muted">Consultante RH Relations</div>
+        <div class="text-xs text-muted">2 relations en commun</div>
+        <i class="icon ion-ios-close-outline secondary"></i>
+        <i class="icon ion-ios-plus-outline calm"></i>
 			</div>
     </div>
 	</ion-content>
