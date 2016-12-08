@@ -295,13 +295,3 @@ form.ng-submitted input.ng-valid + i.icon.error {
   top:137px;
 }
 
-.platform-android .monfooter{
-    position:absolute;
-    bottom:10px;
-    right:5px;
-}
-.platform-ios .monfooter{
-    position:absolute;
-    top:10px;
-    right:5px;
-}

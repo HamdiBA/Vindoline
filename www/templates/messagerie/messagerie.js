@@ -1,5 +1,6 @@
 ﻿'Use Strict';
-angular.module('starter').controller('messagerieController', function ($scope,$rootScope, $state, $localStorage, $location, $http, $ionicPopup, $firebaseAuth, $firebaseObject, $log, Auth, FURL, Utils, $ionicModal, Conversation,$ionicHistory) {
+angular.module('starter')
+    .controller('messagerieController', function ($scope, $rootScope, $state, $localStorage, $location, $http, $ionicPopup, $firebaseAuth, $firebaseObject, $log, Auth, FURL, Utils, $ionicModal, Conversation, $ionicHistory) {
     $scope.modal = {};
     $scope.voirConv = {};
     $scope.message = {};
@@ -7,14 +8,14 @@ angular.module('starter').controller('messagerieController', function ($scope,$r
     $scope.input = {};
     
     $scope.messagerie = [
-        {
-            user: "Jean Martin",imageProfil:"img/homme.jpg", messages:
-                [
-              { message: "Alors tu fais quoi de beau maintenant ?", date: "22 novembre 2016", heure: "à 11h40", auteur: $rootScope.user.firstname + " " + $rootScope.user.lastname },
-              { message: "Salut !", date: "22 novembre 2016", heure: "à 11h43", auteur: $rootScope.user.firstname + " " + $rootScope.user.lastname },
-              { message: "Hey !", date: "22 novembre 2016", heure: "à 11h45", auteur: "Jean Martin" }
-            ]
-        },
+        {user: "Jean Martin",imageProfil:"img/homme.jpg", messages:
+    [
+  { message: "Alors tu fais quoi de beau maintenant ?", date: "22 novembre 2016", heure: "à 11h10", auteur: $rootScope.user.firstname + " " + $rootScope.user.lastname },
+  { message: "Salut !", date: "22 novembre 2016", heure: "à 11h20", auteur: $rootScope.user.firstname + " " + $rootScope.user.lastname },
+  { message: "Hey !", date: "22 novembre 2016", heure: "à 11h35", auteur: "Jean Martin" }
+    ]
+        },  
+       
         {user: "Maria Jambon",imageProfil:"img/femme.jpg", messages:
             [
                  { message: "Bonjour, je suis interessé par votre profil, je cherche un dévelopeur web senior pour mon entreprise XXX basé à Grenoble. Êtes vous interessé ? Cordialement ", date: "22 novembre 2016", heure: " à 13h43", auteur: "Maria Jambon" }
@@ -23,8 +24,14 @@ angular.module('starter').controller('messagerieController', function ($scope,$r
 
           { message: "Bonjour, Oui. Le poste est bla bla bla. ", date: "22 novembre 2016 ", heure: "à 11h43", auteur: "Maria Jambon" },
           ]
-}
-    ];
+        },
+        {user: "Florian Pizzala",imageProfil:"img/florian.jpg", messages:
+        [
+      { message: "Hey ! ", date: "24 novembre 2016", heure: "à 11h40", auteur:"Florian Pizzala" },
+      { message: "Salut ! tu vas bien ?", date: "26 novembre 2016", heure: "à 11h43", auteur: $rootScope.user.firstname + " " + $rootScope.user.lastname },
+      { message: "Bien et toi ? Qu'est ce que tu deviens ?", date: "28 novembre 2016", heure: "à 11h45", auteur: "Florian Pizzala" }
+        ]
+    }    ];
     $ionicModal.fromTemplateUrl('templates/messagerie/newConversation.html', {
         scope: $scope,
         animation: 'slide-in-up'
@@ -95,4 +102,10 @@ angular.module('starter').controller('messagerieController', function ($scope,$r
             case 11: return "décembre"; break;
         };
     }
+  
+    })
+.filter('reverse', function () {
+    return function (items) {
+        return items.slice().reverse();
+    };
 });

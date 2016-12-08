@@ -9,7 +9,7 @@
         </label>
     </ion-nav-title>
     <ion-content >
-        <ion-list ng-repeat="m in messagerie">
+        <ion-list  ng-repeat="m in messagerie | reverse">
             <ion-item class="item item-avatar" ng-click="voirConversation(m)">
                     <img src="{{m.imageProfil}}">
                     <h2><b>{{m.user}}</b></h2>
@@ -17,7 +17,7 @@
                 
             </ion-item>
         </ion-list>
-       <div class="monfooter">
+       <div >
            <button ng-click="newConversation()" class="pull-right button button-icon icon ion-plus-circled big-icon"></button>
        </div>
          
