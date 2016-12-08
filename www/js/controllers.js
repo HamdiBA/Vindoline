@@ -1,9 +1,8 @@
 angular.module('starter')
 .controller('AppCtrl', function ($scope,$rootScope, $ionicModal, $timeout, $location, $firebaseObject, Auth, FURL, Utils, $ionicHistory) {
   var ref = firebase.database().ref();
-
-
-$rootScope.user = { firstname: "Hamdi", lastname: "Benaoun", nomComplet:"Hamdi Benaoun", imageProfil:"img/me.jpg" ,aPagePro:false };    $rootScope.pagePro = {};
+  $rootScope.user = { firstname: "Hamdi", lastname: "Benaoun", nomComplet: "Hamdi Benaoun", imageProfil: "img/me.jpg", aPagePro: false };
+  $rootScope.pagePro = {};
   $scope.logOut = function () {
       Auth.logout();
       $location.path("/login");

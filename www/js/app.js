@@ -131,7 +131,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/profile');
+    $urlRouterProvider.otherwise('/login');
   })
   .directive('noScroll', function ($document) {
 
@@ -146,11 +146,11 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
     }
   })
 
-  .config(function ($ionicConfigProvider) {
-    $ionicConfigProvider.tabs
-      .position('bottom')
-      .style('standard');
-  });
+  //.config(function ($ionicConfigProvider) {
+  //  $ionicConfigProvider.tabs
+  //    .position('bottom')
+  //    .style('standard');
+  //});
 
 
 
