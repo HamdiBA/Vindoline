@@ -294,3 +294,15 @@ form.ng-submitted input.ng-valid + i.icon.error {
 }
 
 
+.platform-android .mytabs {
+    background-color: #fff !important;
+}
+    .platform-android .mytabs a.tab-item{
+        color:  black !important;
+        opacity: 0.6;
+    }
+    .platform-android .mytabs a.tab-item-active {
+        color:  black !important;
+        opacity: 1;
+        border-top:   3px;
+    }
