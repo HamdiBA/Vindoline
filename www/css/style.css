@@ -286,12 +286,14 @@ form .has-success {
   border-left: 5px solid #3d8b3d; }
 
 form.ng-submitted input.ng-valid + i.icon.error {
-  display: none; }
+  display: none;
+
+}
 .platform-android .bar-subheader.has-tabs-top{
   top:93px !important;
 }
-
+/*
 .platform-android .has-subheader.has-tabs-top{
   top:137px;
-}
+}*/
 

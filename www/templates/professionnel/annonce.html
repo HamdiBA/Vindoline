@@ -1,0 +1,46 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-positiveitem-input-inset bar-no-border">
+
+        <button class="button button-small button-light" ng-click="goBack()">
+            <i class="icon ion-android-arrow-back"></i>
+        </button>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="cover-image has-bg" ng-style="{'background-image': 'url(\'' + 'img/bg.png' + '\')'}"></div>
+
+        <div class="card profile-top text-center">
+            <div class="item item-text-wrap">
+                <button class="button button-icon ion-edit calm" ng-click="editProfil()"></button>
+                <img src="img/atos.jpg" class="avatar-profile" alt="">
+                <h2 class="font-thin">{{annonce.titre}}</h2>
+                <div class="text-sm">{{pagePro.nom}} </div>
+                <div class="text-sm text-muted">{{pagePro.lieu}} </div>
+                <div class="text-sm text-muted"> Publié le {{annonce.datePublication}} </div>
+                <div class="padding">
+                    <button class="button button-small font-bold padder button-calm">Postuler</button>
+                </div>
+                <br>
+                <p>{{annonce.description}}</p>
+                    <span class="calm">Lire le descriptif en entier</span>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider no-bg b-none">
+                A propos de l'entreprise
+            </div>
+            <div class="item item-avatar">
+                <img src="img/atos.jpg" alt="">
+                <h2>{{pagePro.nom}}</h2>
+                <p>{{pagePro.description}}</p>
+                <span class="calm">Lire la suite</span>
+            </div>
+           
+                
+            
+        </div>
+    </ion-content>
+    
+</ion-modal-view>

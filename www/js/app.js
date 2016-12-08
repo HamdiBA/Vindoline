@@ -99,11 +99,6 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
         templateUrl: 'templates/forgot/forgot.html',
         controller: 'forgotController'
       })
-      .state('annonces', {
-        url: '/annonces',
-        templateUrl: 'templates/annonces/annonces.html',
-        controller: 'annoncesCtrl'
-      })
       .state('contacts', {
         url: '/contacts',
         templateUrl: 'templates/contacts/contacts.html',
@@ -128,6 +123,16 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
         url: '/pagepro',
         templateUrl: 'templates/professionnel/pagePro.html',
         controller: 'creerPageProCtrl'
+      })
+      .state('ajouterannonce', {
+          url: '/ajouterannonce',
+          templateUrl: 'templates/professionnel/ajouterAnnonce.html',
+          controller: 'creerPageProCtrl'
+      })
+        .state('annonces', {
+            url: '/annonces',
+            templateUrl: 'templates/professionnel/annonces.html',
+            controller: 'creerPageProCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback

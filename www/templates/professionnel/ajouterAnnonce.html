@@ -1,0 +1,33 @@
+﻿<ion-view title="Ajouter une annonce">
+
+    <ion-content>
+        <form ng-submit="addAnnonce()">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Titre de l'annonce </span>
+                    <input required ng-model="annonce.titre" type="text" placeholder="Titre de l'annonce">
+                </label>
+                <label class="item item-input item-select">
+                    <span class="input-label">
+                        Emploi
+                    </span>
+                    <select ng-model="annonce.emploi">
+                        <option selected>CDI</option>
+                        <option>CDD</option>
+                        <option>Stage</option>
+                        <option>Intérim</option>
+                    </select>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Description</span>
+                    <textarea required ng-model="annonce.description" placeholder="Description"></textarea>
+                </label>
+                
+                <div class="medium_button">
+                    <input type="submit" class="button button-block button-positive " value="Ajouter">
+                </div>
+            </div>
+        </form>
+
+    </ion-content>
+</ion-view>

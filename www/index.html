@@ -94,9 +94,6 @@
                       <ion-item menu-toggle href="#/profile">
                         <i class="icon ion-person"></i> Mon Profil
                       </ion-item>
-                      <ion-item menu-toggle href="#/annonces">
-                        <i class="icon ion-briefcase"></i> Annonces
-                      </ion-item >
                       <ion-item menu-toggle href="#/candidacy">
                       <i class="icon ion-android-contacts"></i> Candidatures
                       </ion-item >
@@ -116,6 +113,12 @@
                       <!-- Tester si une page a déjà été créé si oui-->
                       <ion-item ng-if="user.aPagePro" menu-toggle href="#/pagepro">
                           <i class="icon ion-briefcase"></i> Voir page professionnelle
+                      </ion-item>
+                      <ion-item ng-if="user.aPagePro && pagePro.annonces.length !== 0" menu-toggle href="#/pagepro">
+                          <i class="icon ion-briefcase"></i> Voir les annonces
+                      </ion-item>
+                      <ion-item ng-if="user.aPagePro" menu-toggle href="#/ajouterannonce">
+                          <i class="icon ion-compose"></i>Ajouter une annonce
                       </ion-item>
                       <!-- Tester si une page a déjà été créé si non-->
                       <ion-item ng-if="!user.aPagePro" menu-toggle href="#/creerpagepro">
