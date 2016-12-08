@@ -14,12 +14,16 @@
                     <img src="{{m.imageProfil}}">
                     <h2><b>{{m.user}}</b></h2>
                     <p>{{m.messages[0].message}}</p>
-                
+
             </ion-item>
         </ion-list>
-       <div class="monfooter">
-           <button ng-click="newConversation()" class="pull-right button button-icon icon ion-plus-circled big-icon"></button>
-       </div>
-         
+      <!--<div class="monfooter">
+        <button ng-click="newConversation()"
+                class="pull-right button button-icon icon ion-plus-circled big-icon"></button>
+      </div>-->
+
     </ion-content>
+  <div class="button-fab calm-bg box-shadow">
+    <i class="icon ion-plus" ng-click="newConversation()"></i>
+  </div>
 </ion-view>

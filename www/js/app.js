@@ -107,7 +107,7 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
       .state('contacts', {
         url: '/contacts',
         templateUrl: 'templates/contacts/contacts.html',
-        controller: 'contactsCtrl'
+        controller: 'contactController'
       })
       .state('candidacy', {
         url: '/candidacy',

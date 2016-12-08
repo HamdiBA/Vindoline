@@ -23,10 +23,9 @@ angular.module('starter')
   $scope.newPost = function() {
     $scope.modalPost.show();
   };
-
-  // calendar
-
-
+  $scope.closePost = function() {
+    $scope.modalPost.hide();
+  };
 
   // refresh page
 

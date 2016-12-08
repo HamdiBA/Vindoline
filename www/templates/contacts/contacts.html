@@ -1,13 +1,12 @@
-<ion-view view-title="Network" hide-nav-bar="true">
+<ion-view view-title="Network">
   <ion-header-bar class="bar-dark item-input-inset bar-no-border">
-    <label class="item-input-wrapper light-bg" ng-init="searchFocus = false">
+    <label class="item-input-wrapper light-bg">
       <i class="icon ion-ios-search placeholder-icon"></i>
-      <input type="search" placeholder="Rechercher" ng-focus="searchFocus = true">
+      <input type="search" placeholder="Rechercher">
     </label>
   </ion-header-bar>
 
   <ion-content>
-    <div ng-show="searchFocus" ng-include="'templates/search/search_suggestions.html'"></div>
 
     <div ng-show="!searchFocus">
       <div class="row no-padder">
