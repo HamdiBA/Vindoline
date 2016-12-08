@@ -289,11 +289,8 @@ form.ng-submitted input.ng-valid + i.icon.error {
   display: none;
 
 }
-.platform-android .bar-subheader .tabsPadding{
+.platform-android .bar-subheader.tabsPadding{
   top:93px !important;
 }
-/*
-.platform-android .has-subheader.has-tabs-top{
-  top:137px;
-}*/
+
 

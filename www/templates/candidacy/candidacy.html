@@ -1,8 +1,48 @@
-<ion-view title="Candidatures">
-  <ion-nav-buttons side="left">
-    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-  </ion-nav-buttons>
-  <ion-content padding="true">
-    <h1 style="text-align: center;">Candiday Page</h1>
-  </ion-content>
+﻿<ion-view title="Vos candidatures">
+    <ion-header-bar class="tab-dark bar-subheader bg-muted">
+        <div class="tabs tabs-secondary settings bg-muted" ng-init="activeTab = 0">
+            <div class="tab-item" ng-class="{active: activeTab == 0}" ng-click="activeTab = 0">
+                Enregistré
+            </div>
+            <div class="tab-item" ng-class="{active: activeTab == 1}" ng-click="activeTab = 1">
+                Envoyé
+            </div>
+            
+        </div>
+    </ion-header-bar>
+    <ion-content class="has-header has-subheader">
+        <div ng-show="activeTab == 0">
+            <div class="list card">
+                    <div class="item item-avatar">
+                        <img src="img/ibm.jpg">
+                        <h2>Développeur Ionic</h2>
+                        <p>IBM</p>
+                        <p>New York, USA</p>
+                    </div>
+                </div>
+        </div>
+
+        <div ng-show="activeTab == 1">
+            <div class="list card">
+                <div class="item-divider">
+                    Postulé le 28 novembre 2016
+                </div>
+
+                <div class="item item-avatar">
+                    <img src="img/microsoft.png">
+                    <h2>Développeur web PHP</h2>
+                    <p>Microsoft</p>
+                    <p>Redmond, USA</p>
+                </div>
+            </div>
+            <div class="list card">
+                <div class="item item-avatar">
+                    <img src="img/oracle.png">
+                    <h2>Développeur J2E</h2>
+                    <p>Oracle</p>
+                    <p>Redwood Shores, USA</p>
+                </div>
+            </div>
+        </div>
+        
 </ion-view>

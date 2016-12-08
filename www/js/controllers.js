@@ -4,8 +4,8 @@ angular.module('starter')
   $rootScope.user = { firstname: "Hamdi", lastname: "Benaoun", nomComplet: "Hamdi Benaoun", imageProfil: "img/me.jpg", aPagePro: false };
   $rootScope.pagePro = {};
   $scope.logOut = function () {
-      Auth.logout();
-      $location.path("/login");
+     // Auth.logout();
+      $state.go("welcome");
   };
 
   $scope.myGoBack = function () {
