@@ -138,7 +138,12 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
             url: '/annonces',
             templateUrl: 'templates/professionnel/annonces.html',
             controller: 'creerPageProCtrl'
-      });
+        })
+        .state('annonce', {
+            url: '/annonce',
+            templateUrl: 'templates/professionnel/annonce.html',
+            controller: 'creerPageProCtrl'
+        });;
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/welcome');

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -13703,12 +13703,12 @@ a.tag {
 }
 
 .bg-gradient {
-  background-image: -webkit-gradient(linear, right bottom, left bottom, color-stop(0, #008DC9), color-stop(1, #019DA5));
-  background-image: -o-linear-gradient(left, #019DA5 0%, #008DC9 100%);
-  background-image: -moz-linear-gradient(left, #019DA5 0%, #008DC9 100%);
-  background-image: -webkit-linear-gradient(left, #019DA5 0%, #008DC9 100%);
-  background-image: -ms-linear-gradient(left, #019DA5 0%, #008DC9 100%);
-  background-image: linear-gradient(to left, #019DA5 0%, #008DC9 100%);
+  background-image: -webkit-gradient(linear, right bottom, left bottom, color-stop(0, #ef473a ), color-stop(1, #F03225));
+  background-image: -o-linear-gradient(left, #F03225 0%, #ef473a  100%);
+  background-image: -moz-linear-gradient(left, #F03225 0%, #ef473a  100%);
+  background-image: -webkit-linear-gradient(left, #F03225 0%, #ef473a  100%);
+  background-image: -ms-linear-gradient(left, #F03225 0%, #ef473a  100%);
+  background-image: linear-gradient(to left, #F03225 0%, #ef473a  100%);
 }
 
 /* Post */
@@ -13870,12 +13870,12 @@ a.tag {
 }
 
 .settings .tab-item.active {
-  border-bottom: 2px solid #008cc9;
+  border-bottom: 2px solid #E92517;
 }
 
 .also-view {
   background-size: cover;
-  background-color: #1b4b74;
+  background-color: #E92517;
   padding-top: 16px;
   padding-bottom: 80px;
 }

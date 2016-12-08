@@ -3,7 +3,7 @@
     <ion-content>
        <div class="list card">
            <div  class="item item-icon-left" ng-repeat="annonce in pagePro.annonces">
-                <a ng-click="voirAnnonce(annonce)" >
+                <a href="/#/annonce" ng-click="voirAnnonce(annonce)" >
                     <h3>{{annonce.titre}}</h3>
                     <p>Postée le {{annonce.datePublication}}</p>
                 </a>

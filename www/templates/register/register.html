@@ -4,31 +4,28 @@
     <button class="button button-icon button-clear button-light ion-android-close" ng-click="closeRegister()"></button>
   </ion-header-bar>
   <ion-content class="padding-top">
-    <div class="text-center padding-top">
-      <img src="img/logo.png" width="30%"/>
-    </div>
     <form name="registerForm" novalidate ng-submit="registerForm.$valid && register(user)"
           ng-class="{ 'has-error' : registerForm.txtemail.$invalid && registerForm.$submitted }">
 
-      <div class="list list-inset">
-          <label class="item item-input">
-              <i class="icon ion-person"></i>
-              <input name="txtnom" type="text" ng-model="user.lastname" placeholder="Nom"
+      <div class="list list-inset bg-gradient">
+          <label class="item item-input bg-gradient">
+              <i class="icon ion-person light"></i>
+              <input class="bg-gradient" name="txtnom" type="text" ng-model="user.lastname" placeholder="Nom"
                      ng-minlength="1"
                      ng-maxlength="30"
                      required>
           </label>
-          <label class="item item-input">
-              <i class="icon ion-person"></i>
-              <input name="txtprenom" type="text" ng-model="user.name" placeholder="Prénom"
+          <label class="item item-input bg-gradient">
+              <i class="icon ion-person light"></i>
+              <input class="bg-gradient" name="txtprenom" type="text" ng-model="user.name" placeholder="Prénom"
                      ng-minlength="1"
                      ng-maxlength="30"
                      required>
           </label>
 
-        <label class="item item-input">
-          <i class="icon ion-email"></i>
-          <input name="txtemail" type="email" ng-model="user.email" placeholder="Adresse E-mail"
+        <label class="item item-input bg-gradient">
+          <i class="icon ion-email light"></i>
+          <input class="bg-gradient" name="txtemail" type="email" ng-model="user.email" placeholder="Adresse E-mail"
                  ng-minlength="6"
                  ng-maxlength="30"
                  required>
@@ -38,9 +35,9 @@
           <div class="form-error" ng-message="email">Le champ email est vide</div>
           <div class="form-error" ng-message="maxlength">max length</div>
         </div>-->
-        <label class="item item-input" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}">
-          <i class="icon ion-locked"></i>
-          <input name="txtpassword" type="password" ng-model="user.password" placeholder="Mot de passe"
+        <label class="item item-input bg-gradient" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}">
+          <i class="icon ion-locked light"></i>
+          <input class="bg-gradient" name="txtpassword" type="password" ng-model="user.password" placeholder="Mot de passe"
                  ng-minlength="6"
                  ng-maxlength="25"
                  required>
@@ -53,7 +50,7 @@
         </div>-->
       </div>
       <div class="medium_button">
-        <input type="submit" value="Valider" class="button button-block button-assertive"/>
+        <input type="submit" value="S'inscrire" class="button button-block button-light button-outline"/>
       </div>
     </form>
   </ion-content>

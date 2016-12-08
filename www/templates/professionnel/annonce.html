@@ -1,7 +1,6 @@
-﻿<ion-modal-view>
-    <ion-header-bar class="bar-positiveitem-input-inset bar-no-border">
-
-        <button class="button button-small button-light" ng-click="goBack()">
+﻿<ion-view>
+    <ion-header-bar class="bar-assertive item-input-inset bar-no-border">
+        <button class="button button-small button-assertive" ng-click="goBack()">
             <i class="icon ion-android-arrow-back"></i>
         </button>
     </ion-header-bar>
@@ -11,18 +10,18 @@
 
         <div class="card profile-top text-center">
             <div class="item item-text-wrap">
-                <button class="button button-icon ion-edit calm" ng-click="editProfil()"></button>
+                <button class="button button-icon ion-edit assertive" ng-click="editProfil()"></button>
                 <img src="img/atos.jpg" class="avatar-profile" alt="">
                 <h2 class="font-thin">{{annonce.titre}}</h2>
                 <div class="text-sm">{{pagePro.nom}} </div>
                 <div class="text-sm text-muted">{{pagePro.lieu}} </div>
                 <div class="text-sm text-muted"> Publié le {{annonce.datePublication}} </div>
                 <div class="padding">
-                    <button class="button button-small font-bold padder button-calm">Postuler</button>
+                    <button class="button button-small font-bold padder button-assertive">Postuler</button>
                 </div>
                 <br>
                 <p>{{annonce.description}}</p>
-                    <span class="calm">Lire le descriptif en entier</span>
+                    <span class="assertive">Lire le descriptif en entier</span>
                 
             </div>
         </div>
@@ -35,7 +34,7 @@
                 <img src="img/atos.jpg" alt="">
                 <h2>{{pagePro.nom}}</h2>
                 <p>{{pagePro.description}}</p>
-                <span class="calm">Lire la suite</span>
+                <span class="assertive">Lire la suite</span>
             </div>
            
                 
@@ -43,4 +42,4 @@
         </div>
     </ion-content>
     
-</ion-modal-view>
+</ion-view>

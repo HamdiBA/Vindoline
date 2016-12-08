@@ -1,6 +1,6 @@
 
 <ion-view view-title="Préferences">
-  <ion-header-bar class="tab-dark bar-subheader bg-muted">
+  <ion-header-bar class="tabs-light bar-subheader bg-muted">
     <div class="tabs tabs-secondary settings bg-muted" ng-init="activeTab = 0">
       <div class="tab-item" ng-class="{active: activeTab == 0}" ng-click="activeTab = 0">
         COMPTE
@@ -46,35 +46,5 @@
         </div>
       </div>
        </div>
-<ion-view title="Paramètres">
-  <ion-content  class="has-header">
-      <ion-list>
-          <ion-item class="item-divider">
-              Compte
-          </ion-item>
-          <ion-item class="item-stacked-label">
-              <span class="input-label">Email</span>
-              <input type="email">
-          </ion-item>
-          <ion-item class="item-stacked-label">
-              <span class="input-label">Numéro de téléphone</span>
-              <input type="text">
-          </ion-item>
-          <ion-item >Changer mot de passe</ion-item>
-          <ion-item class="item-divider">
-              Confidentialité
-          </ion-item>
-          <ion-item class="item item-input item-select">
-              <div class="input-label">
-                  Qui peut vous suivre
-              </div>
-              <select>
-                  <option selected>Tout le monde</option>
-                  <option>Mes relations</option>
-              </select>
-          </ion-item>
-</ion-list>
-     
-      
-  </ion-content>
+
 </ion-view>

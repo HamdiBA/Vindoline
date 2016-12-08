@@ -1,13 +1,12 @@
 ﻿<ion-view title="Vos candidatures">
-    <ion-header-bar class="tab-dark bar-subheader bg-muted">
-        <div class="tabs tabs-secondary settings bg-muted" ng-init="activeTab = 0">
+    <ion-header-bar class="tabs-light bar-subheader bg-muted">
+        <div class="tabs tabs-secondary settings" ng-init="activeTab = 0">
             <div class="tab-item" ng-class="{active: activeTab == 0}" ng-click="activeTab = 0">
                 Enregistré
             </div>
             <div class="tab-item" ng-class="{active: activeTab == 1}" ng-click="activeTab = 1">
                 Envoyé
             </div>
-            
         </div>
     </ion-header-bar>
     <ion-content class="has-header has-subheader">

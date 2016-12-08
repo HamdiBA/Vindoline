@@ -1,6 +1,6 @@
 ﻿<ion-modal-view>
-    <ion-header-bar class="bar bar-light">
-        <button class="button button-small button-light" ng-click="goBack()">
+    <ion-header-bar class="bar bar-assertive">
+        <button class="button button-small button-assertive" ng-click="goBack()">
             <i class="icon ion-android-arrow-back"></i> 
         </button>
         <h1 class="title">{{conversation.user}}</h1>
@@ -25,7 +25,7 @@
         
     </ion-content>
     <form ng-submit="repondreMessage(input.message, conversation)" >
-        <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
+        <ion-footer-bar class="bar-assertive item-input-inset message-footer" keyboard-attach>
             <label class="item-input-wrapper textarea-message">
                 <textarea class="textarea" ng-model="input.message"  required minlength="1" maxlength="1500" msd-elastic></textarea>
             </label>

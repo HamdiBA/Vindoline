@@ -38,7 +38,7 @@ angular.module('starter').controller('creerPageProCtrl', function ($scope, $root
     $scope.voirAnnonce = function (annonce) {
         console.log(annonce);
         $scope.annonce = annonce;
-        $scope.modal.show();
+      //  $state.go("annonce");
     }
     $scope.goBack = function () {
         $scope.modal.hide();

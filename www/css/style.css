@@ -180,7 +180,7 @@ p.forgot-text {
   margin: 10px;
 }
 .bubble-chat.right{
-    background-color: #387ef5  ;
+    background-color: #ef473a  ;
     margin-right:60px;
     color:white;
 }
@@ -194,17 +194,17 @@ p.forgot-text {
 
 }
 .bubble-chat.right:before {
-  background-color: #387ef5 ;
+  background-color: #ef473a ;
   right: 75px;
   -webkit-transform: rotate(125deg) ;
 }
 .bubble-chat.left:before {
-  background-color: #e6e5eb;
+  background-color: #f8f8f8 ;
   left: 75px;
   -webkit-transform: rotate(55deg) ;
 }
 .bubble-chat.left{
-    background-color :#e6e5eb;
+    background-color :#f8f8f8 ;
     margin-left:60px;
 }
 .date{
