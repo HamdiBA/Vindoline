@@ -1,7 +1,8 @@
 ﻿<ion-modal-view >
-    <ion-header-bar class="bar bar-dark">
+    <ion-header-bar class="bar bar-light">
+        <button class="button button-clear button-primary" ng-click="modal.hide()"><i class="icon ion-android-close"></i></button>
         <h1 class="title">Nouvelle Conversation</h1>
-        <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+        
     </ion-header-bar>
    
     <ion-content>
@@ -13,7 +14,7 @@
                 <textarea placeholder="Entrez votre message" ng-model="message.texte" rows="6" ></textarea>
             </label>
             <label class="item item-input">
-                <button class="button button-block button-assertive">
+                <button class="button button-block button-positive">
                     Envoyer
                 </button>
             </label>

@@ -156,7 +156,7 @@ p.forgot-text {
 }
 .big-icon, .big-icon:hover, .big-icon:before {
     font-size:60px !important;
-    color:#ef473a;
+    color:#387ef5 ;
 }
 
 
@@ -180,7 +180,7 @@ p.forgot-text {
   margin: 10px;
 }
 .bubble-chat.right{
-    background-color: #ef473a ;
+    background-color: #387ef5  ;
     margin-right:60px;
     color:white;
 }
@@ -194,7 +194,7 @@ p.forgot-text {
 
 }
 .bubble-chat.right:before {
-  background-color: #ef473a;
+  background-color: #387ef5 ;
   right: 75px;
   -webkit-transform: rotate(125deg) ;
 }
@@ -295,3 +295,13 @@ form.ng-submitted input.ng-valid + i.icon.error {
   top:137px;
 }
 
+.platform-android .monfooter{
+    position:absolute;
+    bottom:10px;
+    right:5px;
+}
+.platform-ios .monfooter{
+    position:absolute;
+    top:10px;
+    right:5px;
+}
