@@ -149,7 +149,14 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
             url: '/annonce',
             templateUrl: 'templates/professionnel/annonce.html',
             controller: 'creerPageProCtrl'
-        });;
+        })
+
+      .state('connections', {
+        url: '/connections',
+        templateUrl: 'templates/modal/connections.html',
+        controller: 'connectionsController'
+      });
+
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/welcome');

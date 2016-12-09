@@ -1,0 +1,119 @@
+
+<ion-view view-title="Profil" >
+  <ion-header-bar class="bar-assertive item-input-inset bar-no-border">
+  </ion-header-bar>
+
+  <ion-content class="bg-muted">
+    <div class="cover-image has-bg" ng-style="{'background-image': 'url(\'' + 'img/bg.png' + '\')'}"></div>
+
+    <div class="card profile-top text-center">
+      <div class="item item-text-wrap">
+        <button class="button button-icon ion-edit assertive" ng-click="editProfil()"></button>
+        <img src="img/gaetan.jpg" class="avatar-profile" alt="">
+        <h2 class="font-thin">Adam Lambert</h2>
+        <div class="text-md">Consultante RH Relations</div>
+        <div class="text-sm text-muted">Paris, France <i class="icon ion-person-stalker"></i></div>
+        <div class="padding">
+          <button class="button button-small font-bold padder button-assertive">Message</button>
+          <button class="button button-small font-bold padder button-assertive">Ajouter</button>
+        </div>
+        <br>
+        <p>Recruitement 2.0, Social Media ...</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="item item-divider no-bg b-none">
+        Activité de Adam
+        <p>119 abonnés</p>
+      </div>
+      <div class="item item-avatar">
+        <img src="img/bg.png" alt="">
+        <h2>Nouvelle offre - Responsable ...</h2>
+        <p>Adam Lambert a partagé ceci</p>
+      </div>
+      <div class="item item-divider no-bg text-center">
+        <span class="assertive">VOIR PLUS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider no-bg b-none">
+        ExpÃ©rience
+      </div>
+      <div class="item item-avatar item-text-wrap">
+        <img src="http://www.jaimelesstartups.fr/wp-content/uploads/2015/07/logo-edgar-HD.png" alt="" class="avatar-organization">
+        <h2><b>Digital Talent Recuiter & Team Manager</b></h2>
+        <p>Edgar People</p>
+        <p>sept. 2016 - aujourd'hui</p>
+      </div>
+      <div class="item item-avatar item-text-wrap">
+        <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAMZAAAAJDNjYjYzZjI0LTVhMDgtNGQ0Ny1iNDUzLTkyM2Y0YWJlZTJiNw.png" alt="" class="avatar-organization">
+        <h2><b>Business Development</b></h2>
+        <p>MEGA International</p>
+        <p>déc. 2013 - juin 2015</p>
+      </div>
+
+      <div class="item item-divider no-bg b-none">
+        Formation
+      </div>
+      <div class="item item-avatar item-text-wrap">
+        <img src="https://www.univ-paris1.fr/fileadmin/Service-com/supports-comm/Logos/logo_coul_fr_cmjn.jpg" alt="" class="avatar-organization">
+        <h2><b>Université Paris 1</b></h2>
+        <p>Master 2, Finance</p>
+        <p>2007</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider no-bg b-none">
+        Compétences et recommandations sélectionnées
+      </div>
+
+      <div>
+        <div class="wrapper-sm">
+          <div class="bg-muted wrapper-xs padder inline rounded text-sm"><span class="font-bold">Développement commercial</span> Â· <span class="text-muted">13</span></div>
+        </div>
+        <div class="wrapper-sm">
+          <div class="bg-muted wrapper-xs padder inline rounded text-sm"><span class="font-bold">Stratégie commerciale</span> Â· <span class="text-muted">33</span></div>
+        </div>
+
+      </div>
+
+      <div class="item item-divider no-bg text-center">
+        <span class="assertive">VOIR PLUS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider no-bg b-none">
+        Abonnements
+      </div>
+
+      <div class="likers wrapper-sm">
+        <img class="thumb-xs m-r-sm pull-left" src="img/adam.jpg" random-avatar alt="" ng-repeat="i in [0,1]">
+        <span class="thumb-xs rounded b b-light more-liker">
+          <i class="icon ion-more"></i>
+        </span>
+      </div>
+
+      <div class="item item-divider no-bg text-center">
+        <span class="assertive">VOIR TOUT</span>
+      </div>
+    </div>
+
+    <div class="also-view">
+      <div class="item item-divider text-center">
+        Autres profils consultés
+      </div>
+      <div class="item item-avatar item-text-wrap" ng-repeat="i in [0,1,2,3,4]">
+        <img src="" random-avatar alt="">
+        <h2><b>Christian Wimmer</b>Â· 2nd</h2>
+        <p>Ingénieur d'études et développement chez Atos</p>
+      </div>
+    </div>
+  </ion-content>
+
+
+</ion-view>

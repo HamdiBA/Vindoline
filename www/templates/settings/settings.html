@@ -1,5 +1,8 @@
 
 <ion-view view-title="Préferences">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+  </ion-nav-buttons>
   <ion-header-bar class="tabs-light bar-subheader bg-muted">
     <div class="tabs tabs-secondary settings bg-muted" ng-init="activeTab = 0">
       <div class="tab-item" ng-class="{active: activeTab == 0}" ng-click="activeTab = 0">
@@ -16,7 +19,7 @@
   <ion-content class="has-header has-subheader">
     <div ng-show="activeTab == 0">
       <div class="list">
-        <div class="item item-text-wrap" ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
+        <div class="item item-text-wrap">
           <h2>Adresses e-mail</h2>
           <p>Ajouter ou supprimer des adresses e-mail sur votre compte</p>
         </div>
@@ -25,7 +28,7 @@
 
     <div ng-show="activeTab == 1">
       <div class="list">
-        <div class="item item-text-wrap" ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
+        <div class="item item-text-wrap">
           <h2>Partager les modifications de profil</h2>
           <p>Décidez si vous souhaitez notifier votre réseau de vos modifications de profil</p>
         </div>

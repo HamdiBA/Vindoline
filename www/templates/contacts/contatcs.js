@@ -19,6 +19,19 @@ angular.module('starter').controller('contactController', function ($scope,$root
     $scope.modal.hide();
   };
 
+
+  $ionicModal.fromTemplateUrl('templates/profile/profilNotFriend.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function (modal) {
+    $scope.modalPro = modal;
+  });
+  $scope.openProfilFriend = function () {
+    $scope.modalPro.show();
+  };
+
+
+
   $ionicModal.fromTemplateUrl('templates/modal/new_connection.html', {
     scope: $scope,
     animation: 'slide-in-up'
