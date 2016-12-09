@@ -1,0 +1,82 @@
+﻿<ion-view title="{{pagePro.nom}}">
+    <ion-header-bar class="bar-assertive item-input-inset bar-no-border">
+    </ion-header-bar>
+    <ion-content class="bg-muted">
+        <div class="cover-image has-bg" ng-style="{'background-image': 'url(\'' + 'img/bg.png' + '\')'}"></div>
+
+        <div class="card profile-top text-center">
+            <div class="item item-text-wrap">
+                <button class="button button-icon ion-edit assertive" ng-click="editProfil()"></button>
+                <img src="{{autrepagePro.image}}" class="avatar-profile" alt="">
+                <h2 class="font-thin">{{autrepagePro.nom}}</h2>
+                <div class="text-md">{{autrepagePro.secteur}}</div>
+                <div class="text-sm text-muted">{{autrepagePro.lieu}} </div>
+                <div class="padding">
+                    <button class="button button-small font-bold padder button-assertive">Voir les annonces</button>
+                    <button class="button button-small font-bold padder button-assertive">+ Suivre</button>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <!--<div class="card">
+            <div class="item item-divider no-bg b-none">
+                Votre activitÃ©
+                <p>119 abonnÃ©s</p>
+            </div>
+            <div class="item item-avatar">
+                <img src="img/bg.png" alt="">
+                <h2>Sautez le pas!</h2>
+                <p>Hamdi Benaoun aime ceci</p>
+            </div>
+            <div class="item item-divider no-bg text-center">
+                <span class="calm">VOIR PLUS</span>
+            </div>
+        </div>-->
+
+        <div class="card">
+            <div class="item item-divider no-bg b-none">
+                A propos d'{{autrepagePro.nom}}
+            </div>
+            <div class="item item-body">
+                <p>{{autrepagePro.description}}</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider no-bg b-none">
+                Information sur l'entreprise
+            </div>
+            <div class="item item-body">
+                <h3>Site web</h3>
+                <p>{{autrepagePro.siteweb}}</p>
+                <h3>Secteur</h3>
+                <p>{{autrepagePro.secteur}}</p>
+                <h3>Taille de l'entreprise</h3>
+                <p>{{autrepagePro.tailleentreprise}}</p>
+                <h3>Secteur</h3>
+                <p>{{autrepagePro.lieu}}</p>
+            </div>
+        </div>
+        <div class="also-view">
+            <div class="item item-divider text-center">
+                Entreprises Similaires
+            </div>
+            <div class="item item-avatar item-text-wrap">
+                <img src="img/microsoft.png" alt="">
+                <h2><b>Microsoft</b></h2>
+                <p>Redmond</p>
+            </div>
+            <div class="item item-avatar item-text-wrap">
+                <img src="img/oracle.png" alt="">
+                <h2><b>Oracle</b></h2>
+                <p>Redwood Shores</p>
+            </div>
+            <div class="item item-avatar item-text-wrap">
+                <img src="img/ibm.jpg" alt="">
+                <h2><b>IBM</b></h2>
+                <p>Armonk, New York</p>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

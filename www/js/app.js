@@ -60,10 +60,16 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
         url: '/post/:id',
         views: {
           'home-tab': {
-            templateUrl: 'templates/home/post.html',
+              templateUrl: 'templates/home/post.html',
+              controller: 'homeController'
           }
         }
       })
+          .state('autrepagepro', {
+              url: '/autrepagepro',
+              controller: 'creerPageProCtrl',
+              templateUrl: 'templates/professionnel/autrepagepro.html'
+          })
 
       .state('profile', {
         url: '/profile',

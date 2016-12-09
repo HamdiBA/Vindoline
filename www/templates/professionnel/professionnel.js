@@ -8,6 +8,15 @@ angular.module('starter').controller('creerPageProCtrl', function ($scope, $root
         site: "http://atos.net",
         secteur: "Technologies et services de l’information",
     };
+    $scope.autrepagePro = {
+        nom: "Ionic",
+        description: "Ionic, autrefois connue sous le nom de Drifty Co (société TechStars), est la suite de développement mobile multiplateforme leader. Ionic permet aux développeurs web de créer des applications mobiles riches et interactives sur toutes les plateformes majeures. Ionic a mis à disposition plus de 2 millions d'applications, dont plusieurs sont présentés par Apple, Google et Amazon et atteignent des millions d'utilisateurs. Le SDK d'Ionic est téléchargé plus de 100 000 fois par mois. Ionic a été fondée en 2012 par Ben Sperry et Max Lynch, dans le but de permettre à plus de gens de construire pour le Web et le mobile en utilisant des technologies multiplate-forme et open web.",
+        lieu: "Wisconsin 53703 États-Unis",
+        tailleentreprise: "11-50 employés",
+        site: "http://ionic.io/",
+        secteur: "Logiciels informatiques",
+        image:"img/ionic.png"
+    }
     $scope.modal = {};
     $scope.annonce = {};
     $ionicModal.fromTemplateUrl('templates/professionnel/annonce.html', {
