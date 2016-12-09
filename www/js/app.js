@@ -155,7 +155,13 @@ angular.module('starter', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMes
         url: '/connections',
         templateUrl: 'templates/modal/connections.html',
         controller: 'connectionsController'
-      });
+      })
+
+    .state('profileNotFriend', {
+      url: '/profileNotFriend',
+      controller: 'profilController',
+      templateUrl: 'templates/profile/profilNotFriend.html'
+    });
 
 
     // if none of the above states are matched, use this as the fallback

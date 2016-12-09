@@ -20,14 +20,8 @@ angular.module('starter').controller('contactController', function ($scope,$root
   };
 
 
-  $ionicModal.fromTemplateUrl('templates/profile/profilNotFriend.html', {
-    scope: $scope,
-    animation: 'slide-in-up'
-  }).then(function (modal) {
-    $scope.modalPro = modal;
-  });
-  $scope.openProfilFriend = function () {
-    $scope.modalPro.show();
+  $scope.openProfilFriend = function () {;
+    $state.go('profileNotFriend')
   };
 
 

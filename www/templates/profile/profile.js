@@ -22,4 +22,8 @@ angular.module('starter').controller('profilController', function ($scope,$rootS
     $scope.modal.hide();
   };
 
+  $scope.goBack2 = function () {
+    $state.go("contacts");
+  };
+
 });
