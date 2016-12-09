@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59faf668-05bc-4b0f-a87a-2eb5ce4e4be2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/modal/connections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/candidacy/candidacy.html" afterPath="$PROJECT_DIR$/www/templates/candidacy/candidacy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/candidacy/candidacy.js" afterPath="$PROJECT_DIR$/www/templates/candidacy/candidacy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/contacts/contacts.html" afterPath="$PROJECT_DIR$/www/templates/contacts/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/contacts/contatcs.js" afterPath="$PROJECT_DIR$/www/templates/contacts/contatcs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/home/post.html" afterPath="$PROJECT_DIR$/www/templates/home/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/connections.html" afterPath="$PROJECT_DIR$/www/templates/modal/connections.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" afterPath="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/profile/profile.html" afterPath="$PROJECT_DIR$/www/templates/profile/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/settings/settings.html" afterPath="$PROJECT_DIR$/www/templates/settings/settings.html" />
     </list>
     <ignored path="Vindoline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/profile/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-465">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profilNotFriend.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/profile/profilNotFriend.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1665">
+              <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/settings/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -160,10 +159,10 @@
         <option value="$PROJECT_DIR$/www/templates/modal/connections.js" />
         <option value="$PROJECT_DIR$/www/templates/contacts/contatcs.js" />
         <option value="$PROJECT_DIR$/www/templates/contacts/contacts.html" />
-        <option value="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
-        <option value="$PROJECT_DIR$/www/templates/profile/profile.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/templates/settings/settings.html" />
+        <option value="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
+        <option value="$PROJECT_DIR$/www/templates/profile/profile.html" />
       </list>
     </option>
   </component>
@@ -810,12 +809,12 @@
       <workItem from="1481200487486" duration="10713000" />
       <workItem from="1481217971212" duration="1698000" />
       <workItem from="1481236041583" duration="751000" />
-      <workItem from="1481286239874" duration="8516000" />
+      <workItem from="1481286239874" duration="9061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113365000" />
+    <option name="totallyTimeSpent" value="113910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1147,22 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/profile/profilNotFriend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/profile/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1179,14 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/annonces/annonces.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/messagerie/messagerie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1197,8 +1172,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/settings/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="330">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/annonces/annonces.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/profile/profilNotFriend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
           <folding />
         </state>
       </provider>
