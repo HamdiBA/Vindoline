@@ -309,3 +309,7 @@ form.ng-submitted input.ng-valid + i.icon.error {
 
 
     .textColorWhite{color:white !important;}
+
+    input {
+        padding-left:5px;
+    }

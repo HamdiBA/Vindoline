@@ -1,6 +1,9 @@
 ﻿<ion-view title="{{pagePro.nom}}">
-    <ion-header-bar class="bar-assertive item-input-inset bar-no-border">
-    </ion-header-bar>
+    <ion-nav-buttons>
+        <button class="button button-small button-assertive left" ng-click="goBack2()">
+            <i class="icon ion-android-arrow-back"></i>
+        </button>
+    </ion-nav-buttons>
     <ion-content class="bg-muted">
         <div class="cover-image has-bg" ng-style="{'background-image': 'url(\'' + 'img/bg.png' + '\')'}"></div>
 
