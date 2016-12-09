@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59faf668-05bc-4b0f-a87a-2eb5ce4e4be2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" afterPath="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/profile/profile.html" afterPath="$PROJECT_DIR$/www/templates/profile/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/connections.html" afterPath="$PROJECT_DIR$/www/templates/modal/connections.html" />
     </list>
     <ignored path="Vindoline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/profile/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="1380">
               <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/contacts/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -76,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connections.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="connections.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/modal/connections.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="80" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="80" />
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -154,7 +164,6 @@
         <option value="$PROJECT_DIR$/www/templates/home/post.html" />
         <option value="$PROJECT_DIR$/www/templates/candidacy/candidacy.js" />
         <option value="$PROJECT_DIR$/www/templates/candidacy/candidacy.html" />
-        <option value="$PROJECT_DIR$/www/templates/modal/connections.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/templates/modal/connections.js" />
         <option value="$PROJECT_DIR$/www/templates/contacts/contatcs.js" />
@@ -163,6 +172,7 @@
         <option value="$PROJECT_DIR$/www/templates/settings/settings.html" />
         <option value="$PROJECT_DIR$/www/templates/profile/profilNotFriend.html" />
         <option value="$PROJECT_DIR$/www/templates/profile/profile.html" />
+        <option value="$PROJECT_DIR$/www/templates/modal/connections.html" />
       </list>
     </option>
   </component>
@@ -809,12 +819,12 @@
       <workItem from="1481200487486" duration="10713000" />
       <workItem from="1481217971212" duration="1698000" />
       <workItem from="1481236041583" duration="751000" />
-      <workItem from="1481286239874" duration="9061000" />
+      <workItem from="1481286239874" duration="9299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113910000" />
+    <option name="totallyTimeSpent" value="114148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1130,14 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/contacts/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/contacts/contatcs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1150,14 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="106" column="39" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/modal/connections.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="80" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1196,8 +1190,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/profile/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="1380">
           <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/contacts/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/modal/connections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
           <folding />
         </state>
       </provider>
