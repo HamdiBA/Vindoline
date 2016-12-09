@@ -28,6 +28,9 @@ angular.module('starter').controller('creerPageProCtrl', function ($scope, $root
     $scope.goBack = function () {
         $state.go("app.home");
     };
+    $scope.goBack2 = function () {
+        $state.go("candidacy");
+    };
     $ionicHistory.nextViewOptions({
         disableBack: true
     });
