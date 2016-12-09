@@ -4,13 +4,13 @@
     <button class="button button-icon button-clear button-light ion-android-close" ng-click="closeLogin()"></button>
   </ion-header-bar>
   <ion-content class="padding-top">
- 
+
     <form novalidate name="loginForm" ng-submit="loginForm.$valid && signIn(user)">
       <div class="list list-inset bg-gradient textColorWhite">
         <label class="item item-input bg-gradient light textColorWhite"
                ng-class="{ 'has-error' : loginForm.txtemail.$invalid && loginForm.$submitted }">
           <i class="icon ion-email"></i>
-          <input class="bg-gradient light textColorWhite" name="txtemail" type="email" ng-model="user.email" placeholder="Adresse e-mail"
+          <input  class="bg-gradient light textColorWhite" name="txtemail" type="email" ng-model="user.email" placeholder="Adresse e-mail"
                  ng-minlength="5"
                  ng-maxlength="30"
                  required>
@@ -45,7 +45,7 @@
       <div>
         <div class="medium_button">
           <input type="submit" class="button button-block button-light button-outline textColorWhite " value="Se connecter">
-          <p ng-click="goRegister()" class="button button-block button-light button-clear textColorWhite button-outline">S'inscrire</p>       
+          <p ng-click="goRegister()" class="button button-block button-light button-clear textColorWhite button-outline">S'inscrire</p>
         </div>
 
         <!--<div class="no_account">
